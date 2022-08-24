@@ -19,7 +19,7 @@ The project was developed with the following versions:
  __There is an exported Postman collection: `images-service.postman_collection.json` in the root of the project__
 
 |Endpoint|Description|Params/Fields|
-|-------|-------|----|--------|
+|-------|-------|----|
 |POST `/images`|Endpoint for uploading images. Accepts Content-Type: `multipart/form-data;`|`image` - jpeg file form field|
 |GET `/images`|Endpoint for querying images by geographical bounding box| `maxLng, minLng, maxLat, minLat` - float type bounding box params|
 
