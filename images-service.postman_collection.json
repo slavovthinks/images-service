@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "4bba4ca7-a5bc-4728-ac96-b62fd6b0ce39",
+		"name": "images-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/slavovthinks/Documents/DSCN0010.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/images",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Images",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/images?minLat=43&maxLat=45&minLng=10&maxLng=12",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"images"
+					],
+					"query": [
+						{
+							"key": "minLat",
+							"value": "43"
+						},
+						{
+							"key": "maxLat",
+							"value": "45"
+						},
+						{
+							"key": "minLng",
+							"value": "10"
+						},
+						{
+							"key": "maxLng",
+							"value": "12"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
